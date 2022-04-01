@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, autres WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, autres Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+
+    --primary-color: #0065FC;
+    --secondary-color: #DEEBFF;
+    --background-color: #F2F2F2;
+}
+
+/* Charte graphique */
+body {
+    background-color: var(--background-color);
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-color);
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.padding {
+    padding: 20px;
+}
+
+.header_logo {
+    width: 50%;
+}
+
+nav {
+    width: 20%;
+    padding: 20px;
+}
+
+.header_menu1 {
+    color: var(--primary-color);
+}
+
+.header_button {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+}
+
+.header_filters {
+    width: 65%;
+    font-weight: bold;
+}
+
+.header_filters--margin {
+margin: 20px;
+}
+
+.header_icon {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 3px solid var(--secondary-color);
+    border-radius: 75px 75px;
+    padding: 15px;
+}
+
+.header_border {
+    border: 3px solid var(--secondary-color);
+    border-radius: 75px 75px;
+}
+
+main {
+    width: 100%;
+    height: 600px;
+    background-color: yellow;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: blue;
+}
+
+
+
+/* Tailles : utiliser les pixels et les pourcentages */
+
+/* Utiliser Flexbox plutôt que Grid */
+
+
+
+/* Media queries breakpoints :
+- 992 px pour les écrans d’ordinateurs
+- 768 px pour les tablettes
+- tout ce qui est en dessous de 768 pour les téléphones portables. */
+
+
+
+/* Plusieurs formats et tailles d’images ont été exportés. Il faudra choisir
+le format le plus adapté par rapport à la résolution et au temps de
+chargement. */
