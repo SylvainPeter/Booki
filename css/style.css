@@ -2,29 +2,25 @@
 
 * {
     -webkit-box-sizing: border-box;
-    /* Safari/Chrome, autres WebKit */
     -moz-box-sizing: border-box;
-    /* Firefox, autres Gecko */
     box-sizing: border-box;
-    /* Opera/IE 8+ */
-
+/* Charte graphique */
     --primary-color: #0065FC;
     --secondary-color: #DEEBFF;
     --tertiary-color: #FFFFFF;
     --background-color: #F2F2F2;
 }
 
-/* Charte graphique */
-body {
-    background-color: var(--background-color);
-    font-family: 'Raleway', sans-serif;
-    padding: 20px;
+h1, h2 {
+    font-size: 1.3em;
 }
 
-header {
-    width: 100%;
-    height: auto;
-    background-color: var(--background-color);
+a{
+    outline: none;
+}
+
+a:hover {
+    opacity: 0.7;
 }
 
 .flexbox {
@@ -48,8 +44,20 @@ header {
     padding: 20px;
 }
 
-.header_logo {
-    width: 50%;
+#container {
+    background-color: var(--background-color);
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+#header_logo {
+    width: 45%;
 }
 
 nav {
@@ -113,7 +121,7 @@ aside {
     padding: 5px;
     margin: 10px;
     border-radius: 24px;
-    box-shadow: 2px 2px 4px grey;
+    box-shadow: 3px 3px 4px grey;
 }
 
 .hotel_image {
