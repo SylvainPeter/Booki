@@ -1,5 +1,5 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +15,12 @@
         <nav>
             <img src="images/logo/Booki@3x.png" alt="Logo Booki">
             <div id="menu">
-                <a href="#">Hébergement</a>
-                <a href="#">Activités</a>
+                <a href="#accommodations">Hébergements</a>
+                <a href="#activities">Activités</a>
             </div>
         </nav>
+    </header>
+
         <!-- Slogan -->
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
@@ -59,15 +61,13 @@
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
 
-    </header>
-    
     <main>
         <!-- Hébergements à Marseille -->
         <section class="hotels_section">
 
-            <div class="hotels_results">
+            <div id="accommodations">
                 <h2>Hébergements à Marseille</h2>
-                <div class="hotels_lists">
+                <div class="hotels_list">
 
                     <a href="#" class="hotel_card">
                         <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="canebiere">
@@ -87,16 +87,16 @@
             </div>
 
             <!-- Les plus populaires -->
-            <aside>
+            <div id="popular">
                 <h2>Les plus populaires
                     <i class="fas fa-chart-line"></i>
                 </h2>
-            </aside>
+            </div>
 
         </section>
 
         <!-- Activités à Marseille -->
-        <section class="activities_section">
+        <section id="activities">
             <div class="activities_list">
                 <h2>Activités à Marseille</h2>
             </div>
