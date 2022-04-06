@@ -6,14 +6,14 @@
     --text-color: #000000;
     --primary-color: #0065FC;
     --secondary-color: #DEEBFF;
-    --tertiary-color: #FFFFFF;
     --background-color: #F2F2F2;
+    --white: #FFFFFF;
 }
 
 body {
     padding: 0 50px;
     margin-top: 30px;
-    background-color: var(--background-color);
+    background-color: var(--white);
     font-family: "Raleway", "sans-serif";
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -49,7 +49,7 @@ nav {
     padding-bottom: 30px;
 }
 
-nav>img {
+nav img {
     max-width: 100px;
     margin-top: 30px;
 
@@ -61,12 +61,12 @@ nav>img {
     display: flex;
 }
 
-#menu>a {
+#menu a {
     border-top: 3px solid transparent;
     padding: 30px;
 }
 
-#menu>a:hover {
+#menu a:hover {
     border-top: 3px solid var(--primary-color);
     color: var(--primary-color);
 }
@@ -78,25 +78,25 @@ nav>img {
     margin-bottom: 30px;
 }
 
-.search_form>i {
+.search_form i {
     padding: 16px 18px;
     font-size: 20px;
-    background-color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--background-color);
     border-radius: 14px 0 0 14px;
     opacity: 0.9;
 }
 
-.search_form>input {
+.search_form input {
     padding: 16px 10px;
     font-size: 20px;
     font-weight: bold;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--background-color);
 }
 
-.search_form>button {
+.search_form button {
     padding: 16px 15px;
-    color: var(--tertiary-color);
+    color: var(--white);
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 0 14px 14px 0;
@@ -118,7 +118,7 @@ nav>img {
     gap: 30px;
 }
 
-.filters_selection>h1 {
+.filters_selection h1 {
     margin: 15px 0px 0px 10px;
     font-size: 18px;
 }
@@ -143,7 +143,7 @@ nav>img {
     border-radius: 50%;
 }
 
-.filter_item>span {
+.filter_item span {
     padding: 0 20px;
     font-weight: bold;
     font-size: 18px;
@@ -170,7 +170,7 @@ nav>img {
     width: 25px;
     height: 25px;
     color: var(--primary-color);
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--background-color);
     border-radius: 50%;
 }
 
@@ -185,7 +185,7 @@ nav>img {
     flex-basis: 70%;
     justify-content: space-around;
     padding: 30px 40px 40px 40px;
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
     border-radius: 20px;
 }
 
@@ -209,12 +209,12 @@ nav>img {
     max-height: 100%;
     max-width: 100%;
     padding: 6px;
-    background-color: var(--background-color);
+    background-color: var(--white);
     border-radius: 20px;
-    box-shadow: 0 0 5px lightgrey;
+    box-shadow: 5px 6px 5px lightgrey;
 }
 
-.hotel_card>img {
+.hotel_card img {
     width: 100%;
     min-width: 180px;
     height: 110px;
@@ -222,8 +222,8 @@ nav>img {
     object-fit: cover;
 }
 
-.hotel_card>h3,
-.hotel_card>p {
+.hotel_card h3,
+.hotel_card p {
     margin: 3px 0px 0px 10px;
     font-size: 16px;
 }
@@ -245,7 +245,7 @@ nav>img {
 #popular {
     flex-basis: 30%;
     padding: 30px 40px 40px 40px;
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
     border-radius: 20px;
 }
 
@@ -260,7 +260,7 @@ nav>img {
     margin: 0px -30px 0px -30px;
 }
 
-.activities_list>h2 {
+.activities_list h2 {
     margin-bottom: 60px;
 }
 
@@ -271,7 +271,7 @@ nav>img {
     width: 100%;
     padding-bottom: 30px;
     margin-top: 100px;
-    background-color: #f2f2f2;
+    background-color: var(--background-color);
 }
 
 .footer-titles {
@@ -279,7 +279,7 @@ nav>img {
     flex-wrap: wrap;
 }
 
-.footer-titles>li {
+.footer-titles li {
     list-style: none;
     padding-bottom: 20px;
 }
