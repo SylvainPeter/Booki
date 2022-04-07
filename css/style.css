@@ -176,26 +176,27 @@ nav img {
 
 /* Hébergements à Marseille */
 
-.hotels_section {
+.hotels_sections {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
 }
 
-#accommodations {
-    flex-basis: 70%;
+#accommodations_container {
+    flex-basis: 61%;
     justify-content: space-around;
     padding: 30px 40px 40px 40px;
     background-color: var(--background-color);
     border-radius: 20px;
 }
 
-#accommodations>a {
+#accommodations_container>a {
     padding: 20px;
     font-size: 18px;
     font-weight: bold;
 }
 
-.hotels_list {
+#hotels_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -228,8 +229,8 @@ nav img {
     font-size: 16px;
 }
 
-.stars {
-    margin-top: 15px;
+.hotel_card .stars {
+    font-size: 12px;
 }
 
 .star_color1 {
@@ -242,12 +243,61 @@ nav img {
 
 /* Les plus populaires */
 
-#popular {
-    flex-basis: 30%;
+#popular_container {
+    flex-basis: 25%;
     padding: 30px 40px 40px 40px;
     background-color: var(--background-color);
     border-radius: 20px;
 }
+
+#popular_container h2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 17px 10px 30px 5px;
+}
+
+#popular_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.popular_card {
+    display: flex;
+    min-width: 275px;
+    height: 115px;
+    margin: 11px 25px 13px 15px;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 5px 6px 5px lightgrey;
+}
+
+.popular_card img {
+    width: 140px;
+    max-width: 110px;
+    margin: -5px;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+}
+
+.popular_card .stars {
+    margin: auto 0px 0px 15px;
+    font-size: 12px;
+}
+
+.popular_card--description {
+    display: flex;
+    flex-direction: column;
+}
+
+.popular_card--description h3,
+.popular_card--description p {
+    margin: 0px 5px 5px 15px;
+    font-size: 16px;
+}
+
+
 
 /* Activités à Marseille */
 
