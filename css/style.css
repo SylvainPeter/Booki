@@ -105,6 +105,23 @@ nav img {
     opacity: 0.9;
 }
 
+.search_form button {
+    padding: 16px 15px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0 14px 14px 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#search-icon {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
 .search_form:hover {
     opacity: 0.8;
 }
@@ -179,19 +196,22 @@ nav img {
 
 .hotels_sections {
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
 }
 
-#accommodations_container {
+#hotels_container {
     flex-basis: 61%;
     justify-content: space-around;
-    padding: 30px 40px 40px 40px;
+    padding: 28px 40px 40px 40px;
     background-color: var(--background-color);
     border-radius: 20px;
 }
 
-#accommodations_container>a {
+#hotels_container h2 {
+    padding: 0px 0px 19px 20px;
+}
+
+#hotels_container>a {
     padding: 20px;
     font-size: 18px;
     font-weight: bold;
@@ -246,7 +266,7 @@ nav img {
 
 #popular_container {
     flex-basis: 25%;
-    padding: 30px 40px 40px 40px;
+    padding: 30px 80px 40px 40px;
     background-color: var(--background-color);
     border-radius: 20px;
 }
@@ -254,7 +274,8 @@ nav img {
 #popular_container h2 {
     display: flex;
     justify-content: space-between;
-    margin: 17px 10px 30px 5px;
+    padding-left: 20px;
+    margin: 17px -11px 30px 5px;
 }
 
 #popular_list {
@@ -265,7 +286,7 @@ nav img {
 
 .popular_card {
     display: flex;
-    min-width: 275px;
+    min-width: 100%;
     height: 115px;
     margin: 11px 25px 13px 15px;
     padding: 10px;
@@ -299,16 +320,14 @@ nav img {
 }
 
 
-
 /* Activités à Marseille */
 
 #activities_container {
-    margin-top: 50px;
+    padding: 30px 40px 40px 40px;
 }
 
 .activities_list {
     display: flex;
-
     gap: 25px;
 }
 
@@ -323,21 +342,21 @@ nav img {
 }
 
 .activity_card h3 {
-    font-size: 17px;
     margin: 15px 0px 5px 15px;
     padding: 0px 0px 15px 0px;
+    font-size: 17px;
 }
 
 .activity_card--small {
-    height: 150px;
     display: flex;
     flex-direction: column;
+    height: 150px;
 }
 
 .activity_card--small img {
-    border-radius: 15px 15px 0px 0px;
-    height: 95px;
     max-width: 100%;
+    height: 95px;
+    border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
 
@@ -347,57 +366,60 @@ nav img {
 }
 
 .activity_card--medium img {
-    border-radius: 15px 15px 0px 0px;
-    height: 130px;
     max-width: 100%;
+    height: 130px;
+    border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
 
 .activity_card--large {
-    height: 220px;
     display: flex;
     flex-direction: column;
+    height: 220px;
 }
 
 .activity_card--large img {
-    border-radius: 15px 15px 0px 0px;
-    height: 165px;
     max-width: 100%;
+    height: 165px;
+    border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
 
 .activity_card--big {
-    height: 400px;
     display: flex;
     flex-direction: column;
+    height: 400px;
 }
 
 .activity_card--big img {
-    border-radius: 15px 15px 0px 0px;
-    height: 350px;
     max-width: 100%;
+    height: 350px;
+    border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
 
-
 /* Footer */
 
-#footer {
+footer {
     display: flex;
     width: 100%;
     padding-bottom: 30px;
-    margin-top: 35px;
+    margin-top: 28px;
     background-color: var(--background-color);
 }
 
-.footer-titles {
+.footer_titles {
     flex-basis: 30%;
     flex-wrap: wrap;
 }
 
-.footer-titles li {
+.footer_titles h3 {
+    padding-bottom: 8px;
+}
+
+.footer_titles li {
     list-style: none;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 
@@ -406,3 +428,168 @@ nav img {
 - 992 px pour les écrans d’ordinateurs
 - 768 px pour les tablettes
 - tout ce qui est en dessous de 768 pour les téléphones portables. */
+
+
+
+/* Tablet */
+@media (max-width: 992px) {
+    nav img {
+        padding-top: 0px;
+        margin: auto;
+    }
+
+    #menu {
+        flex-basis: 100%;
+    }
+
+    #menu a {
+        flex-basis: 50%;
+        text-align: center;
+        border-bottom: 3px solid transparent;
+    }
+
+    #menu a:hover {
+        border-bottom-color: var(--primary-color);
+        border-top-color: transparent;
+    }
+
+    .main>h1,
+    .main>p {
+        margin: 0px -30px 15px -30px;
+    }
+
+    .search_form {
+        margin: 39px 0 0 0;
+        align-items: baseline;
+    }
+
+    .search_form span {
+        display: none;
+    }
+
+    .search_form i {
+        padding: 12px 14px;
+        margin-bottom: 35px;
+    }
+
+    .search_form input {
+        padding: 12px 12px;
+        border-radius: 0px 0px 20px 0px;
+        flex-grow: 1;
+    }
+
+    .search_form button {
+        height: 45px;
+        padding: 12px 12px;
+        border-radius: 12px 12px 12px 12px;
+        margin-left: -10px;
+    }
+
+    #search-icon {
+        display: inline;
+    }
+
+    .filters_selection {
+        flex-direction: column;
+        margin: 2px 2px 35px 1px;
+    }
+
+    .results_message {
+        margin: 25px -13px 5px 5px;
+    }
+
+    .hotels_section .hotels_container {
+        margin: 0px -50px 0px -50px;
+        background: none;
+    }
+
+    .hotels_sections {
+        flex-direction: column-reverse;
+    }
+
+    #hotels_list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hotels_section .popular_container {
+        margin: 0px -50px 0px -50px;
+        border-radius: 0px;
+    }
+
+    #popular_container {
+        margin-top: 22px;
+    }
+
+    #popular_list {
+        flex-direction: column;
+    }
+
+    #activities_container {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        padding: 30px 40px 15px 40px;
+    }
+
+    .activity_card {
+        max-height: 100%;
+        height: 200px;
+        width: 100%;
+    }
+
+    .activity_card h3 {
+        font-size: 14px;
+    }
+
+    .activities_list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .activities_column {
+        flex-wrap: wrap;
+        flex: 1 0 100%;
+        margin: -30px 0px 0px 0px;
+    }
+
+    .activities_list .activities_container {
+        margin: 0px -30px 0px -30px;
+    }
+
+    .activities_list .activities_container h2 {
+        margin-bottom: 60px;
+    }
+
+    .activity_card img {
+        max-height: 100%;
+        height: 150px;
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width:768px) {
+    .activity_card {
+        width: 100%;
+    }
+
+    .activity_card img {
+        height: 150px;
+        width: 100%;
+    }
+
+    .hotels_list {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .footer_titles {
+        margin: 0px 10px 0px -20px;
+        padding-top: 15px;
+    }
+}
