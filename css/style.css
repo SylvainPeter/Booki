@@ -135,7 +135,7 @@ nav img {
     gap: 30px;
 }
 
-.filters_selection h1 {
+.filters_selection h2 {
     margin: 15px 0px 0px 10px;
     font-size: 18px;
 }
@@ -411,28 +411,25 @@ footer {
 .footer_titles {
     flex-basis: 30%;
     flex-wrap: wrap;
+    padding: 13px 5px 5px 25px;
 }
 
 .footer_titles h3 {
     padding-bottom: 8px;
 }
 
-.footer_titles li {
-    list-style: none;
-    padding-bottom: 15px;
+.footer_titles p {
+    line-height: 1em;
 }
-
-
-
-/* Media queries breakpoints :
-- 992 px pour les écrans d’ordinateurs
-- 768 px pour les tablettes
-- tout ce qui est en dessous de 768 pour les téléphones portables. */
 
 
 
 /* Tablet */
 @media (max-width: 992px) {
+    p {
+        font-size: 15px;
+    }
+
     nav img {
         padding-top: 0px;
         margin: auto;
@@ -459,7 +456,7 @@ footer {
     }
 
     .search_form {
-        margin: 39px 0 0 0;
+        margin: 39px 0px 0px -8px;
         align-items: baseline;
     }
 
@@ -568,6 +565,7 @@ footer {
     }
 }
 
+
 /* Mobile */
 @media (max-width:767px) {
 
@@ -580,9 +578,8 @@ footer {
         font-size: 20px;
     }
 
-    p,
     a {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     #menu a {
@@ -596,7 +593,7 @@ footer {
 
     .search_form input {
         padding: 15px 12px 11px 12px;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .search_form button {
@@ -683,7 +680,15 @@ footer {
     }
 
     .footer_titles {
-        margin: 0px 10px 0px -20px;
+        margin: 0px 10px 0px -3px;
         padding-top: 11px;
+    }
+
+    .footer_titles h3 {
+        font-size: 20px;
+    }
+
+    .footer_titles p {
+        font-size: 15px;
     }
 }
