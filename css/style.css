@@ -402,9 +402,10 @@ nav img {
 
 footer {
     display: flex;
-    width: 100%;
+    width: calc(100% + 50px);
     padding-bottom: 30px;
-    margin-top: 28px;
+    padding-left: 50px;
+    margin: 0 -50px 0 -50px;
     background-color: var(--background-color);
 }
 
