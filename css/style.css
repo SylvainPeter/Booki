@@ -11,7 +11,6 @@
 }
 
 body {
-    padding: 0 50px;
     margin-top: 30px;
     background-color: var(--white);
     font-family: "Raleway", "sans-serif";
@@ -41,6 +40,10 @@ a:hover {
 }
 
 /* Header */
+
+header {
+    padding: 0 50px;
+}
 
 nav {
     display: flex;
@@ -72,6 +75,10 @@ nav img {
 }
 
 /* Formulaire de recherche */
+
+#top_infos {
+    padding: 0 50px;
+}
 
 .search_form {
     display: flex;
@@ -194,9 +201,10 @@ nav img {
 
 /* Hébergements à Marseille */
 
-.hotels_sections {
+#hotels_sections {
     display: flex;
     gap: 30px;
+    padding: 0 50px;
 }
 
 #hotels_container {
@@ -323,7 +331,7 @@ nav img {
 /* Activités à Marseille */
 
 #activities_container {
-    padding: 30px 40px 40px 40px;
+    padding: 30px 50px 40px 50px;
 }
 
 .activities_list {
@@ -402,17 +410,15 @@ nav img {
 
 footer {
     display: flex;
-    width: calc(100% + 50px);
-    padding-bottom: 30px;
-    padding-left: 50px;
-    margin: 0 -50px 0 -50px;
+    width: 100%;
+    margin-top: 28px;
     background-color: var(--background-color);
 }
 
 .footer_titles {
     flex-basis: 30%;
     flex-wrap: wrap;
-    padding: 13px 5px 5px 25px;
+    padding: 13px 4px 40px 65px;
 }
 
 .footer_titles h3 {
@@ -496,12 +502,12 @@ footer {
         margin: 25px -13px 5px 5px;
     }
 
-    .hotels_section .hotels_container {
+    #hotels_section .hotels_container {
         margin: 0px -50px 0px -50px;
         background: none;
     }
 
-    .hotels_sections {
+    #hotels_sections {
         flex-direction: column-reverse;
     }
 
@@ -510,7 +516,7 @@ footer {
         flex-direction: column;
     }
 
-    .hotels_section .popular_container {
+    #hotels_section .popular_container {
         margin: 0px -50px 0px -50px;
         border-radius: 0px;
     }
@@ -527,7 +533,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 60px;
-        padding: 30px 40px 15px 40px;
+        padding: 30px 50px 15px 50px;
     }
 
     .activity_card {
@@ -570,10 +576,6 @@ footer {
 /* Mobile */
 @media (max-width:767px) {
 
-    body {
-        padding: 0 27px;
-    }
-
     h1,
     h2 {
         font-size: 20px;
@@ -581,6 +583,14 @@ footer {
 
     a {
         font-size: 16px;
+    }
+
+    header {
+        padding: 0 30px;
+    }
+
+    #top_infos {
+        padding: 0 30px;
     }
 
     #menu a {
@@ -613,32 +623,21 @@ footer {
     }
 
     .filter_item span {
-        font-size: 15px;
+        font-size: 16px;
         padding: 0px 16px;
     }
 
     .filter_item .fas {
-        font-size: 12px;
+        font-size: 18px;
     }
 
-    #popular_container {
-        padding: 30px 54px 40px 4px;
-    }
-
-    .popular_card--description h3 {
-        font-size: 13px;
-    }
-
-    .popular_card--description p {
-        font-size: 12px;
-    }
-
-    .popular_card .stars {
-        font-size: 10px;
+    #hotels_sections {
+        padding: 0;
     }
 
     #hotels_container {
-        padding: 28px 11px 40px 11px;
+        padding: 0px 11px 40px 11px;
+        background-color: var(--white);
     }
 
     #hotels_container>a {
@@ -657,9 +656,26 @@ footer {
         font-size: 10px;
     }
 
+    #popular_container {
+        padding: 30px 54px 40px 4px;
+        border-radius: 0;
+    }
+
+    .popular_card--description h3 {
+        font-size: 13px;
+    }
+
+    .popular_card--description p {
+        font-size: 12px;
+    }
+
+    .popular_card .stars {
+        font-size: 10px;
+    }
+
     #activities_container {
         gap: 40px;
-        padding: 30px 10px 0 10px;
+        padding: 0px 30px 0 30px;
     }
 
     .activity_card {
@@ -678,11 +694,12 @@ footer {
     footer {
         flex-wrap: wrap;
         flex-direction: column;
+        padding: 0;
     }
 
     .footer_titles {
         margin: 0px 10px 0px -3px;
-        padding-top: 11px;
+        padding: 13px 4px 10px 40px;
     }
 
     .footer_titles h3 {
